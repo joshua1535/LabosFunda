@@ -8,7 +8,9 @@ int main()
      int cantidad;
 
     cout << "Ingrese el nombre del producto: " << endl;
-    getline(cin,producto);
+    getline(cin,producto); /*Se utiliza el getline para que se pueda almacenar mas de una palabra, 
+                            junto con espacios en la variable producto sin que c++ las tome como 
+                            variables independientes una palabra de la otra*/
 
     float precio;
     cout << "Ingrese el precio unitario: " << endl;
