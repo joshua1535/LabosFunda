@@ -191,7 +191,7 @@ int diaDespues(int day, int month, int year, bool respuesta){
         case 12:
             day += 1;
             if(day > 31 && day <= 32){
-                month += 1;
+                month = 1;
                 year += 1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
