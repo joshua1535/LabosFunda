@@ -9,9 +9,9 @@ int main(void){
 
     cout << "Ingrese el dia: ";
     cin >> day;
-    cout << "ingrese el mes: ";
+    cout << "Ingrese el mes: ";
     cin >> month;
-    cout << "ingrese el año: ";
+    cout << "Ingrese el año: ";
     cin >> year;
 
     diaDespues(day,month,year,respuesta);
@@ -379,7 +379,7 @@ int diaDespues(int day, int month, int year, bool respuesta){
         case 12:
             day += 1;
             if(day > 31 && day <= 32){
-                month += 1;
+                month = 1;
                 year += 1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
