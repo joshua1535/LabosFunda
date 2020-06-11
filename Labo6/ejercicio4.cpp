@@ -25,24 +25,29 @@ int diaDespues(int day, int month, int year, bool respuesta){
         {                                                       //Se realiza un if, para diferenciar si el año es bisiesto o no 
         case 1:                                                 //luego, se realiza un switch de cada mes, para evaluar si solo se 
             day += 1;                                           //sumara uno al dia o si se cambiara de mes, y en el caso de diciembre
-            if(day > 31){                                       //si tambien se cambiara el año
+            if(day > 31 && day <= 32){                               //si tambien se cambiara el año
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
-            }else
+            }else if (day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
-            
             break;
         
         case 2:
             day += 1;
-            if(day > 29){
+            if(day > 29 && day <= 30){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 29)
+            {
+               cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -50,11 +55,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
             
         case 3:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -62,11 +70,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 4:
             day += 1;
-            if(day > 30){
+            if(day > 30 && day <= 31){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 30)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -74,11 +85,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 5:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -86,11 +100,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 6:
             day += 1;
-            if(day > 30){
+            if(day > 30 && day <= 31){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 30)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -98,11 +115,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 7:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -110,11 +130,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
         
         case 8:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
-                cout << "La fecha es: " << day << "/"<< month << "/"<< year;
-            }else
+                cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -122,11 +145,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
         
         case 9:
             day += 1;
-            if(day > 30){
+            if(day > 30 && day <= 31){
                 month +=1;
                 day = 1;
-                cout << "La fecha es: " << day << "/"<< month << "/"<< year;
-            }else
+                cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
+            }else if(day > 30)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -134,11 +160,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
         
         case 10:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
-                cout << "La fecha es: " << day << "/"<< month << "/"<< year;
-            }else
+                cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -146,11 +175,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 11:
             day += 1;
-            if(day > 30){
+            if(day > 30 && day <= 31){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 30)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -158,12 +190,15 @@ int diaDespues(int day, int month, int year, bool respuesta){
         
         case 12:
             day += 1;
-            if(day > 31){
-                year +=1;
+            if(day > 31 && day <= 32){
+                month += 1;
+                year += 1;
                 day = 1;
-                month = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -178,24 +213,29 @@ int diaDespues(int day, int month, int year, bool respuesta){
         {
         case 1:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
-                cout << "La fecha es: " << day << "/"<< month << "/"<< year;
-            }else
+                cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
-            
             break;
         
         case 2:
             day += 1;
-            if(day > 28){
+            if(day > 28 && day <= 29){
                 month +=1;
                 day = 1;
                cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 28)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -203,11 +243,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
             
         case 3:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
-               cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+                cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -215,11 +258,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 4:
             day += 1;
-            if(day > 30){
+            if(day > 30 && day <= 31){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 30)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -227,11 +273,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 5:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -239,11 +288,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 6:
             day += 1;
-            if(day > 30){
+            if(day > 30 && day <= 31){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 30)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -251,11 +303,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 7:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -263,11 +318,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
         
         case 8:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -275,11 +333,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
         
         case 9:
             day += 1;
-            if(day > 30){
+            if(day > 30 && day <= 31){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 30)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -287,11 +348,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
         
         case 10:
             day += 1;
-            if(day > 31){
+            if(day > 31 && day <= 32){
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
-            }else
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -299,11 +363,14 @@ int diaDespues(int day, int month, int year, bool respuesta){
 
         case 11:
             day += 1;
-            if(day > 30){
+            if(day > 30 && day <= 31){
                 month +=1;
                 day = 1;
-                cout << "La fecha es: " << day << "/"<< month << "/"<< year;
-            }else
+                cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
+            }else if(day > 30)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
@@ -311,12 +378,15 @@ int diaDespues(int day, int month, int year, bool respuesta){
         
         case 12:
             day += 1;
-            if(day > 31){
-                year +=1;
+            if(day > 31 && day <= 32){
+                month += 1;
+                year += 1;
                 day = 1;
-                month = 1;
-                cout << "La fecha es: " << day << "/"<< month << "/"<< year;
-            }else
+                cout << "La fecha es: " << day << "/"<< month << "/"<< year; 
+            }else if(day > 31)
+            {
+                cout << "ERROR, ingrese un valor de dia correcto";
+            }else 
             {
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
             }
