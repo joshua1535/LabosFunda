@@ -25,7 +25,7 @@ int diaDespues(int day, int month, int year, bool respuesta){
         {                                                       //Se realiza un if, para diferenciar si el año es bisiesto o no 
         case 1:                                                 //luego, se realiza un switch de cada mes, para evaluar si solo se 
             day += 1;                                           //sumara uno al dia o si se cambiara de mes, y en el caso de diciembre
-            if(day > 31 && day <= 32){                               //si tambien se cambiara el año
+            if(day > 31 && day <= 32){                          //si tambien se cambiara el año
                 month +=1;
                 day = 1;
                 cout << "La fecha es: " << day << "/"<< month << "/"<< year;
