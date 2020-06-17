@@ -1,4 +1,5 @@
 #include "iostream"
+
 using namespace std;
 
 int Leer_arreglo1(int arreglo1[],int n){ 
