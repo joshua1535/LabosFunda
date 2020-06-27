@@ -32,7 +32,13 @@ float Guardar_nota(float notasest[][5], int numest, float notafinal[][5], float 
 		{
 			notadesp[i][1] = notafinal[i][n] + notafinal[i][n+1] + notafinal[i][n+2] + notafinal[i][n+3] +notafinal[i][n+4];
 			cout << "La nota del estudiante " << i << " es: ";
-			cout << notadesp[i][1] << endl; //se despliega la sumatoria
+			if(notadesp[i][1] >= 6.00){
+				cout << notadesp[i][1] << endl; //se despliega la sumatoria
+				cout << "El estudiante aprobo." << endl;
+			}else{
+				cout << notadesp[i][1] << endl;
+				cout << "El estrudiante reprobo." << endl;
+			}
 		}
 	}return notadesp[numest][1];
 }
