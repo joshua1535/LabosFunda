@@ -1,43 +1,63 @@
-#include <iostream>
-#include <string>
+#include "iostream"
+#include "string"
 
 using namespace std;
 
-void Codif(char frase[100]){ //funcion que pide la frase y la codifica
-	 int i=0;
+string codificarcadena(string cad)
+{
+string codificar;
+int recorrido = cad.length();
+for (int i = 0; i < recorrido; i++) //iteracion que recorre cada caracter de la frase
+{
+	string letra;
+	char leercadena = cad.at(i);
+	letra = leercadena;
 
-	 cout<<"Ingresa la frase a codificar (utilize '_' para separar las palabras): ";
-	 cin>>frase;
-	 
-	 while(frase[i]!='\0'){
-	 	
-	 	if(frase[i]=='M'|| frase[i]=='m') //revisa cada caracter y lo modifica si pertenece a la clave
-	 	frase[i]='0';
-	 	if(frase[i]=='U'|| frase[i]=='u')
-	 	frase[i]='1';
-	 	if(frase[i]=='R'|| frase[i]=='r')
-	 	frase[i]='2';
-	 	if(frase[i]=='C'|| frase[i]=='c')
-	 	frase[i]='3';
-	 	if(frase[i]=='I'|| frase[i]=='i')
-	 	frase[i]='4';
-	 	if(frase[i]=='E'|| frase[i]=='e')
-	 	frase[i]='5';
-	 	if(frase[i]=='L'|| frase[i]=='l')
-	 	frase[i]='6';
-	 	if(frase[i]=='A'|| frase[i]=='a')
-	 	frase[i]='7';
-	 	if(frase[i]=='G'|| frase[i]=='g')
-	 	frase[i]='8';
-	 	if(frase[i]=='O'|| frase[i]=='o')
-	 	frase[i]='9';
-	 	i++;
-	 }
-	 cout << "la frase codificada es: " << frase;
+	switch (leercadena) // para evaluar si el caracter va a ser codificado o no
+	{
+		case 'm':
+		  letra = "0";
+		  break;
+		case 'u':
+		  letra = "1";
+		  break;
+		case 'r':
+		  letra = "2";
+		  break;
+		case 'c':
+		  letra = "3";
+		  break;
+		case 'i':
+		  letra = "4";
+		  break;
+		case 'e':
+		  letra = "5";
+		  break;
+		case 'l':
+		  letra = "6";
+		  break;
+		case 'a':
+		  letra = "7";
+		   break;
+		case 'g':
+		  letra = "8";
+		  break;
+		case 'o':
+		  letra = "9";
+		  break;
+		default:
+		  break;
+	}
+	codificar = codificar.append(letra);
+}
+ return codificar;
 }
 
-int main(){
-	char frase[100];
 
-	Codif(frase);
+int main()
+{
+	string cadedena;
+	cout << "Ingrese el texto a codificar en clave Murcielago: ";
+	getline(cin, cadedena); //funcion para que puedan agregarse espacios a la frase 
+	cout <<"El texto codificado es: " << codificarcadena(cadedena) << endl;
 }
