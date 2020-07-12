@@ -1,5 +1,4 @@
 #include "iostream"
-
 using namespace std;
 
 int Leer_arreglo1(int arreglo1[],int n){ 
@@ -9,6 +8,7 @@ int Leer_arreglo1(int arreglo1[],int n){
         cin >> arreglo1[i];
     }return arreglo1[n];
 }
+
 // Se realizan las funciones que pediran los elementos que se sumaran 
 int Leer_arreglo2(int arreglo2[],int n){
 
