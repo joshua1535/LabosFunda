@@ -20,7 +20,7 @@ int Leer_arreglo2(int arreglo2[],int n){
 
 int Suma_arreglos(int arreglo1[],int arreglo2[],int n, int arreglosum[]){ 
 
-    for(int i =0; i<n; i++){ //se suman los elementos de ambos arrayas y se almacena en un tercero
+    for(int i =0; i<n; i++){ //se suman los elementos de ambos arrays y se almacena en un tercero
         arreglosum[i] = arreglo1[i] + arreglo2[i];
     } return arreglosum[n];
 }
